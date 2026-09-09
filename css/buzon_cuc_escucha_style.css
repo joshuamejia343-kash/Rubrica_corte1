@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #e8f7fb, #f4f7f8);
+    color: #333;
+    min-height: 100vh;
+}
+
+header {
+    background: linear-gradient(135deg, #168aad, #126e89);
+    color: white;
+    text-align: center;
+    padding: 42px 20px;
+}
+
+header h1 {
+    margin-bottom: 10px;
+    font-size: 2.2rem;
+}
+
+header p {
+    font-size: 1.05rem;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    padding: 40px 20px;
+}
+
+.contenedor {
+    background-color: white;
+    width: 100%;
+    max-width: 680px;
+    padding: 32px;
+    border-radius: 14px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.contenedor h2 {
+    text-align: center;
+    margin-bottom: 28px;
+    color: #168aad;
+}
+
+.grupo {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 18px;
+}
+
+label {
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+input,
+select,
+textarea {
+    padding: 12px;
+    border: 1px solid #c9d4d8;
+    border-radius: 7px;
+    font-size: 15px;
+    font-family: inherit;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    border-color: #168aad;
+    box-shadow: 0 0 0 3px rgba(22, 138, 173, 0.12);
+}
+
+.fila {
+    display: flex;
+    gap: 20px;
+}
+
+.fila .grupo {
+    width: 50%;
+}
+
+#anonimo {
+    width: 18px;
+    height: 18px;
+    margin-top: 4px;
+    accent-color: #168aad;
+}
+
+button {
+    width: 100%;
+    padding: 14px;
+    background-color: #168aad;
+    color: white;
+    border: none;
+    border-radius: 7px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+button:hover {
+    background-color: #126e89;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #666;
+    font-size: 14px;
+}
+
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    .contenedor {
+        padding: 24px 20px;
+    }
+
+    .fila {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .fila .grupo {
+        width: 100%;
+    }
+}
