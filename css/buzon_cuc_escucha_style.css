@@ -117,6 +117,19 @@ footer {
     font-size: 14px;
 }
 
+
+#edad:hover {
+    border-color: #126e89;
+}
+
+#edad:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(22, 138, 173, 0.12);
+}
+
+#edad::placeholder {
+    color: #9aa5a8;
+}
 @media (max-width: 600px) {
     header h1 {
         font-size: 1.8rem;
